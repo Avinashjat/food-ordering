@@ -1,0 +1,96 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navigationb bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    margin: 10px 35px ;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 5px ;
+}
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul{
+    list-style: none;
+    font-size: 18px;
+}
+#navbar ul a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 15px;
+    text-decoration: none;
+}  
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;   
+}  
+
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height: 300px;
+   justify-content: center;
+   align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(foodimg/food5.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 7.90;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family:"Sofia", sans-serif;
+}
+#home p{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font: 1.8rem;
+}
+
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(147, 9, 163);
+    color: white;
+    border-radius: 6px;
+     margin: 20px;
+     font-size: 1.5rem;
+}
